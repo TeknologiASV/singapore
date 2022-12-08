@@ -142,6 +142,7 @@ var ouStartDate = "";
 var ouEndDate = "";
 var ouStartTime = "";
 var ouEndTime = "";
+var bilik = "72";
 
 $(function () {
   toastr.options = {
