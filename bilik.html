@@ -41,7 +41,7 @@
       </div>
     </div-->
     <div class="row">
-      <div class="col-4">
+      <div class="col-6">
         <div class="info-box">
           <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
           <div class="info-box-content">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-6">
         <div class="info-box">
           <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
           <div class="info-box-content">
@@ -61,16 +61,18 @@
           </div>
         </div>
       </div>
-      <div class="col-2">
+    </div>
+    <div class="row">
+      <div class="col-6">
         <div class="info-box">
           <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Average Sleep Time (Hours)</span>
-            <span class="info-box-number" id="purchaseInfo">3.17</span>
+            <span class="info-box-number" id="purchaseInfo">7.17</span>
           </div>
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-6">
         <div class="info-box">
           <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
           <div class="info-box-content">
@@ -203,7 +205,7 @@ $(function () {
     labels: ['Sofa/Living Area', 'Kitchen', 'Main Door', 'Bathroom', 'Toilet', 'Window'],
     datasets: [
       {
-        data: [parseFloat(Math.random() * 250).toFixed(2), parseFloat(Math.random() * 10).toFixed(2), parseFloat(Math.random() * 3).toFixed(2), parseFloat(Math.random() * 10).toFixed(2), parseFloat(Math.random() * 15).toFixed(2), parseFloat(Math.random() * 3).toFixed(2)],
+        data: [parseFloat(Math.random() * (76 - 49) + 49).toFixed(2), parseFloat(Math.random() * (30 - 20) + 20).toFixed(2), parseFloat(Math.random() * (10 - 3) + 3).toFixed(2), parseFloat(Math.random() * (9 - 7) + 7).toFixed(2), parseFloat(Math.random() * (9 - 7) + 7).toFixed(2), parseFloat(Math.random() * (5 - 3) + 3).toFixed(2)],
         backgroundColor : ['#f4a522', '#6092cd', '#61b546', '#aa4498', '#dccc77', '#89dcf0'],
       }
     ]
@@ -227,7 +229,7 @@ $(function () {
         pointStrokeColor    : 'rgba(244, 165, 34, 1)',
         pointHighlightFill  : '#fff',
         pointHighlightStroke: 'rgba(244, 165, 34, 1)',
-        data                : [parseFloat(Math.random() * 205).toFixed(2), parseFloat(Math.random() * 15).toFixed(2), parseFloat(Math.random() * 15).toFixed(2)]
+        data                : [parseFloat(Math.random() * (76 - 49) + 49).toFixed(2), parseFloat(Math.random() * (76 - 49) + 49).toFixed(2), parseFloat(Math.random() * (30 - 20) + 20).toFixed(2)]
       }
     ]
   }
@@ -247,7 +249,7 @@ $(function () {
 
   var barChartCanvas2 = $('#totalTimeSpentInToilet').get(0).getContext('2d');
   var barChartData2 = {
-    labels  : ['22/11', '23/11', '24/11', '25/11', '26/11', '27/11'],
+    labels  : ['22/02', '23/02', '24/02', '25/02', '26/02', '27/02'],
     datasets: [
       {
         label               : 'Bathroom',
@@ -258,7 +260,7 @@ $(function () {
         pointStrokeColor    : 'rgba(244, 165, 34, 1)',
         pointHighlightFill  : '#fff',
         pointHighlightStroke: 'rgba(244, 165, 34, 1)',
-        data                : [parseFloat(Math.random() * 20).toFixed(2), 1, 0, 0, parseFloat(Math.random() * 12).toFixed(2), parseFloat(Math.random() * 14).toFixed(2)]
+        data                : [2, 1.5, parseFloat(Math.random() * (2 - 1) + 1).toFixed(2), parseFloat(Math.random() * (2 - 1) + 1).toFixed(2), parseFloat(Math.random() * (2 - 1) + 1).toFixed(2), parseFloat(Math.random() * (2 - 1) + 1).toFixed(2)]
       },
       {
         label               : 'Shower & Toilet',
@@ -269,7 +271,7 @@ $(function () {
         pointStrokeColor    : '#6092cd',
         pointHighlightFill  : '#fff',
         pointHighlightStroke: 'rgba(96, 146, 205, 1)',
-        data                : [1.5, parseFloat(Math.random() * 20).toFixed(2), 0, parseFloat(Math.random() * 10).toFixed(2), parseFloat(Math.random() * 20).toFixed(2), 0, 0]
+        data                : [1.5, parseFloat(Math.random() * (2 - 1) + 1).toFixed(2), 2, parseFloat(Math.random() * (2 - 1) + 1).toFixed(2), parseFloat(Math.random() * (2 - 1) + 1).toFixed(2), 1.3, 1.2]
       }
     ]
   }
@@ -280,7 +282,7 @@ $(function () {
   var lineChartCanvas = $('#averageSleepTime').get(0).getContext('2d');
   var lineChartOptions = {responsive: true, maintainAspectRatio: false, datasetFill: false};
   var lineChartData = {
-    labels  : ['22/11', '23/11', '24/11', '25/11', '26/11', '27/11'],
+    labels  : ['22/02', '23/02', '24/02', '25/02', '26/02', '27/02'],
     datasets: [
       {
         label               : 'Hours',
@@ -291,7 +293,7 @@ $(function () {
         pointStrokeColor    : 'rgba(244, 165, 34, 1)',
         pointHighlightFill  : '#fff',
         pointHighlightStroke: 'rgba(244, 165, 34, 1)',
-        data                : [parseFloat(Math.random() * 2.5).toFixed(2), parseFloat(Math.random() * 0.626).toFixed(2), parseFloat(Math.random() * 2.07).toFixed(2), 0, parseFloat(Math.random() * 1.2).toFixed(2), parseFloat(Math.random() * 1.4).toFixed(2)]
+        data                : [parseFloat(Math.random() * (9.5 - 5) + 5).toFixed(2), parseFloat(Math.random() * (9.5 - 5) + 5).toFixed(2), parseFloat(Math.random() * (9.5 - 5) + 5).toFixed(2), parseFloat(Math.random() * (9.5 - 5) + 5).toFixed(2), parseFloat(Math.random() * (9.5 - 5) + 5).toFixed(2), parseFloat(Math.random() * (9.5 - 5) + 5).toFixed(2)]
       }
     ]
   }
